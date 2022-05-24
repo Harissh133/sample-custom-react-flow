@@ -1,5 +1,9 @@
-body {
-  margin: 0;
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  /* margin: 0; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +11,44 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.app {
+  width: 100%;
+  height: 100%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.react-flow__renderer {
+  background-color: rgb(240, 240, 240);
+}
+
+.react-flow__node {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  width: fit-content !important;
+}
+
+.react-flow__node .selected {
+  box-shadow: none !important;
+}
+
+.react-flow__handle {
+  border: none !important;
+}
+
+.react-flow__handle-left {
+  background-color: #2196F3 !important;
+}
+
+.react-flow__handle-right {
+  background-color: #FFC107 !important;
 }
